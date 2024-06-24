@@ -5,9 +5,9 @@ public class Client {
     private long code;
     private String Nome;
     private String email;
-    private List<Assinatura> assinarutas = new ArrayList<Assinatura>(); //facilita achar as assinaturas de determinado cliente
+    private List<Assinatura> assinaturas = new ArrayList<Assinatura>(); //facilita achar as assinaturas de determinado cliente
     
-    public cliente(long code, String Nome, String email){
+    public Client(long code, String Nome, String email){
         this.code = code;
         this.Nome = Nome;
         this.email = email;
@@ -26,10 +26,10 @@ public class Client {
     }
 
     public List<Assinatura> getAssinaturas(){
-        return assinarutas;
+        return assinaturas;
     }
 
     public void addAssinatura(Assinatura assinatura){
-        assinarutas.add(assinatura);
+        assinaturas.add(assinatura);
     }
 }
